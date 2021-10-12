@@ -84,8 +84,8 @@
   position: relative;
   padding: 11px 35px;
   background: #fff;
-  color: #00796b;
-  border: 2px solid #fff;
+  color: #3d2c06;
+  border: 2px solid #191970;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
@@ -102,9 +102,9 @@
 .contactme {
   position: relative;
   padding: 11px 35px;
-  background: none;
-  color: #fff;
-  border: 2px solid #fff;
+  background: #fff;
+  color: #3d2c06;
+  border: 2px solid #191970;
   font-weight: 600;
   font-size: 15px;
   letter-spacing: 1px;
