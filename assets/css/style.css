@@ -95,7 +95,7 @@
 
   position: relative;
   padding: 11px 35px;
-  background: none;
+  background: darkblue;
   color: #3d2c06;
   border: 2px solid #191970;
   font-weight: 600;
@@ -107,10 +107,10 @@
   -webkit-border-radius: 5px;
 }
 
-/* .readme:hover{
-  color: white;
-  background-color: #00796b;
-} */
+.readme:hover {
+  color: #00796b;
+  background-color: white;
+}
 
 .contactme {
   position: relative;
