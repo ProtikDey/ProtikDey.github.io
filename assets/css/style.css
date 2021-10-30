@@ -61,6 +61,13 @@
   color: grey;
 }
 
+li {
+  font-size: 14px;
+  margin-left: 10px;
+  list-style-type: circle;
+  display: list-item;
+}
+
 .icon-btn:hover {
   transform: scale(1.1);
   color: #ffffff;
