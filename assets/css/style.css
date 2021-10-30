@@ -87,11 +87,11 @@
 }
 
 .researchgate:hover {
-  background-color: cornflowerblue;
+  background-color: forestgreen;
 }
 
 .google-scholar:hover {
-  background-color: forestgreen;
+  background-color: cornflowerblue;
 }
 
 /* Buttons - Read Me, Contact Us */
@@ -131,8 +131,8 @@
 .contactme {
   position: relative;
   padding: 11px 35px;
-  background: none;
-  color: #3d2c06;
+  background: white;
+  color: black;
   border: 2px solid #191970;
   font-weight: 600;
   font-size: 15px;
@@ -145,7 +145,7 @@
 
 .contactme:hover {
   color: #00796b;
-  background-color: white;
+  background-color: #87ceeb;
 }
 /* main body */
 
