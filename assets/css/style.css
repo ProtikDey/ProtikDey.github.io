@@ -81,7 +81,7 @@
 /* Buttons - Read Me, Contact Us */
 
 .readme {
-  position: relative;
+  /* position: relative;
   padding: 11px 35px;
   background: #fff;
   color: #3d2c06;
@@ -90,6 +90,19 @@
   font-size: 15px;
   letter-spacing: 1px;
   display: inline-block;
+  border-radius: 5px;
+  -webkit-border-radius: 5px; */
+
+  position: relative;
+  padding: 11px 35px;
+  background: none;
+  color: #3d2c06;
+  border: 2px solid #191970;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-top: 1.5em;
   border-radius: 5px;
   -webkit-border-radius: 5px;
 }
