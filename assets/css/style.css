@@ -57,6 +57,14 @@
   color: #0077b5;
 }
 
+.researchgate {
+  color: forestgreen;
+}
+
+.google-scholar {
+  color: cornflowerblue;
+}
+
 .angellist {
   color: grey;
 }
@@ -95,7 +103,7 @@
 
   position: relative;
   padding: 11px 35px;
-  background: none;
+  background: white;
   color: black;
   border: 2px solid #191970;
   font-weight: 600;
@@ -109,7 +117,7 @@
 
 .readme:hover {
   color: #00796b;
-  background-color: white;
+  background-color: #87ceeb;
 }
 
 .contactme {
