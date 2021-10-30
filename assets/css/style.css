@@ -86,6 +86,14 @@
   background-color: black;
 }
 
+.researchgate:hover {
+  background-color: cornflowerblue;
+}
+
+.google-scholar:hover {
+  background-color: forestgreen;
+}
+
 /* Buttons - Read Me, Contact Us */
 
 .readme {
