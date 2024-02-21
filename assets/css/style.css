@@ -65,6 +65,10 @@
   color: cornflowerblue;
 }
 
+.medium-blog {
+  color: black;
+}
+
 .angellist {
   color: grey;
 }
@@ -92,6 +96,10 @@
 
 .google-scholar:hover {
   background-color: cornflowerblue;
+}
+
+.medium-blog:hover {
+  background-color: black;
 }
 
 /* Buttons - Read Me, Contact Us */
