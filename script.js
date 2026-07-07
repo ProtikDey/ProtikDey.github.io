@@ -8,7 +8,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
 // Mirrors how assistive tech announces the current
 // landmark as a reader moves through the page.
 // ---------------------------------------------
-const railLinks = Array.from(document.querySelectorAll('.rail__link'));
+const railLinks = Array.from(document.querySelectorAll('.rail__link[href^="#"]'));
 const sections = railLinks
   .map(link => document.querySelector(link.getAttribute('href')))
   .filter(Boolean);
