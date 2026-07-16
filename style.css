@@ -236,14 +236,14 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 .social-pill.github         { color: #24292f; }
 .social-pill.google-scholar { color: #4285f4; }
 .social-pill.medium-blog    { color: #191919; }
-.social-pill.researchgate   { color: #00ccbb; }
+.social-pill.researchgate   { color: #009688; }
 
 /* On hover, invert: brand-colored background, white icon */
 .social-pill.linkedin:hover       { background: #0a66c2; border-color: #0a66c2; color: #fff; }
 .social-pill.github:hover         { background: #24292f; border-color: #24292f; color: #fff; }
 .social-pill.google-scholar:hover { background: #4285f4; border-color: #4285f4; color: #fff; }
 .social-pill.medium-blog:hover    { background: #191919; border-color: #191919; color: #fff; }
-.social-pill.researchgate:hover   { background: #00ccbb; border-color: #00ccbb; color: #fff; }
+.social-pill.researchgate:hover   { background: #009688; border-color: #009688; color: #fff; }
 
 .hero__actions { display: flex; gap: 1rem; flex-wrap: wrap; }
 
@@ -286,17 +286,18 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 /* ---------------------------------------------
    Publications & projects
 --------------------------------------------- */
-.pub, .project { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
-.pub:last-child, .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
-
-.pub__title, .project__title { font-size: 1.1rem; margin-bottom: 0.4rem; }
-.pub__authors { color: var(--slate); margin-bottom: 0.3rem; }
-.pub__meta {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  color: var(--slate);
-  margin-bottom: 0;
+.pub-entry {
+  margin: 0 0 1.5rem;
+  line-height: 1.7;
 }
+.pub-entry a { color: var(--indigo); text-decoration: none; }
+.pub-entry a:hover { text-decoration: underline; }
+.pub-entry em { color: var(--slate); }
+
+.project { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+.project__title { font-size: 1.1rem; margin-bottom: 0.4rem; }
 .project__note { font-style: italic; color: var(--slate); margin-bottom: 0.6rem; }
 .project ul { padding-left: 1.2rem; margin: 0; }
 .project li { margin-bottom: 0.4rem; }
