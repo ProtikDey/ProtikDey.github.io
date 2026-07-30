@@ -235,6 +235,7 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 .social-pill i { font-size: 1.3rem; line-height: 1; }  /* icon size — edit this */
 
 /* Colorful brand icons */
+.social-pill.email          { color: var(--indigo); }
 .social-pill.linkedin       { color: #0a66c2; }
 .social-pill.github         { color: #24292f; }
 .social-pill.google-scholar { color: #4285f4; }
@@ -242,6 +243,7 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 .social-pill.researchgate   { color: #009688; }
 
 /* On hover, invert: brand-colored background, white icon */
+.social-pill.email:hover          { background: var(--indigo); border-color: var(--indigo); color: #fff; }
 .social-pill.linkedin:hover       { background: #0a66c2; border-color: #0a66c2; color: #fff; }
 .social-pill.github:hover         { background: #24292f; border-color: #24292f; color: #fff; }
 .social-pill.google-scholar:hover { background: #4285f4; border-color: #4285f4; color: #fff; }
@@ -328,16 +330,65 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
   color: #fff;
 }
 .pub-chip--paper    { background: #28a745; }
-.pub-chip--poster   { background: var(--slate); }
-.pub-chip--abstract { background: var(--indigo); }
+.pub-chip--poster   { background: var(--indigo); }
+.pub-chip--abstract { background: var(--slate); }
 
-.project { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
+.project {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
 .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 
+.project__thumb {
+  flex-shrink: 0;
+  width: 110px;
+  height: 110px;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--indigo-soft);
+}
+.project__thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
 .project__title { font-size: 1.1rem; margin-bottom: 0.4rem; }
-.project__note { font-style: italic; color: var(--slate); margin-bottom: 0.6rem; }
-.project ul { padding-left: 1.2rem; margin: 0; }
-.project li { margin-bottom: 0.4rem; }
+
+.project__tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding: 0;
+  margin: 0 0 0.8rem;
+}
+.project__tags li {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  background: var(--indigo-soft);
+  color: var(--indigo);
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+}
+
+.project__outcomes { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.outcome-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink);
+  background: var(--paper-raised);
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.75rem;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.outcome-chip:hover { border-color: var(--indigo); color: var(--indigo); }
+.outcome-chip i { color: var(--indigo); font-size: 0.8rem; }
 
 /* ---------------------------------------------
    Timeline (experience & education)
