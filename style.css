@@ -45,6 +45,19 @@ body {
   line-height: 1.65;
 }
 
+main { counter-reset: section; }
+h2 { counter-increment: section; }
+h2::before {
+  content: counter(section, decimal-leading-zero);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--indigo);
+  vertical-align: middle;
+  margin-right: 0.6em;
+  letter-spacing: 0.02em;
+}
+
 h1, h2, h3 { font-family: var(--font-display); font-weight: 600; margin: 0 0 0.5em; color: var(--ink); }
 p { margin: 0 0 1em; }
 a { color: var(--indigo); }
@@ -89,16 +102,6 @@ section {
   max-width: var(--content-max);
   margin: 0 auto 5rem;
   scroll-margin-top: 2.5rem;
-}
-
-.num {
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  font-weight: 500;
-  color: var(--indigo);
-  vertical-align: middle;
-  margin-right: 0.6em;
-  letter-spacing: 0.02em;
 }
 
 h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--border); margin-bottom: 1.4rem; }
