@@ -349,6 +349,22 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 .skills-group p { color: var(--slate); margin-bottom: 0; }
 
 /* ---------------------------------------------
+   Services
+--------------------------------------------- */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem 2rem;
+}
+.service-group h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.service-list li { margin-bottom: 0.5rem; }
+
+/* ---------------------------------------------
    Contact
 --------------------------------------------- */
 .contact-list {
