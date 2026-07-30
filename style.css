@@ -287,6 +287,23 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 }
 
 /* ---------------------------------------------
+   News
+--------------------------------------------- */
+.news-list { list-style: none; padding: 0; margin: 0; }
+.news-list li {
+  margin-bottom: 0.9rem;
+  padding-left: 1.1rem;
+  border-left: 2px solid var(--border);
+}
+.news-date {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--indigo);
+  margin-right: 0.6em;
+}
+
+/* ---------------------------------------------
    Publications & projects
 --------------------------------------------- */
 .pub-entry {
@@ -296,6 +313,23 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 .pub-entry a { color: var(--indigo); text-decoration: none; }
 .pub-entry a:hover { text-decoration: underline; }
 .pub-entry em { color: var(--slate); }
+
+.pub-chip {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.15rem 0.6rem;
+  border-radius: 20px;
+  margin-left: 0.5em;
+  vertical-align: middle;
+  color: #fff;
+}
+.pub-chip--paper    { background: #28a745; }
+.pub-chip--poster   { background: var(--slate); }
+.pub-chip--abstract { background: var(--indigo); }
 
 .project { margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid var(--border); }
 .project:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
@@ -356,16 +390,59 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 --------------------------------------------- */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
 }
-.service-group h3 { font-size: 1.05rem; margin-bottom: 0.5rem; }
-.service-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.service-card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
 }
-.service-list li { margin-bottom: 0.5rem; }
+.service-card__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--indigo-soft);
+  color: var(--indigo);
+  font-size: 1.1rem;
+  margin-bottom: 0.9rem;
+}
+.service-card h3 { font-size: 1.05rem; margin-bottom: 0.6rem; }
+.service-list { list-style: none; padding: 0; margin: 0; }
+.service-list li {
+  padding: 0.3rem 0;
+  color: var(--slate);
+}
+.service-list li:not(:last-child) { border-bottom: 1px dashed var(--border); }
+
+.service-subhead {
+  font-size: 1.15rem;
+  margin-bottom: 1rem;
+}
+
+.mentoring-list { list-style: none; padding: 0; margin: 0; }
+.mentoring-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.mentoring-list li:last-child { border-bottom: none; }
+.mentoring-name { font-weight: 700; margin-right: 0.4em; }
+.mentoring-role { color: var(--slate); }
+.mentoring-date {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--slate);
+  white-space: nowrap;
+  margin-left: auto;
+}
 
 /* ---------------------------------------------
    Contact
