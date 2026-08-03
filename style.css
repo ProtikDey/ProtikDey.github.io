@@ -119,6 +119,7 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
   display: flex;
   flex-direction: column;
   gap: 2.25rem;
+  overflow-y: auto;
 }
 
 .rail__avatar {
@@ -569,6 +570,11 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
   .rail__nav ol { flex-direction: row; gap: 0.4rem; }
   .rail__link { white-space: nowrap; }
   .rail__link i { display: none; }
+
+  .project { flex-direction: column; }
+  .project__thumb { width: 100%; height: 140px; }
+
+  .mentoring-list li { flex-wrap: wrap; }
 
   main { padding: 3rem 1.25rem 4rem; }
   .skills-grid { grid-template-columns: 1fr; }
