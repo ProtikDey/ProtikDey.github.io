@@ -313,7 +313,7 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
   margin: 0 0 1.5rem;
   line-height: 1.7;
 }
-.pub-entry a { color: var(--indigo); text-decoration: none; }
+.pub-entry a { color: var(--indigo); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 .pub-entry a:hover { text-decoration: underline; }
 .pub-entry em { color: var(--slate); }
 
@@ -330,7 +330,7 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
   vertical-align: middle;
   color: #fff;
 }
-.pub-chip--paper    { background: #28a745; }
+.pub-chip--paper    { background: #1B7534; }
 .pub-chip--poster   { background: var(--indigo); }
 .pub-chip--abstract { background: var(--slate); }
 
