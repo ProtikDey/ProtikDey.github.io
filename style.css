@@ -292,7 +292,13 @@ h2 { font-size: 1.6rem; padding-bottom: 0.6rem; border-bottom: 1px solid var(--b
 /* ---------------------------------------------
    News
 --------------------------------------------- */
-.news-list { list-style: none; padding: 0; margin: 0; }
+.news-list {
+  list-style: none;
+  margin: 0;
+  padding: 0 0.75rem 0 0;   /* right pad keeps text off the scrollbar */
+  max-height: 24rem;        /* ~6 items, 4 rem each, total 24 rem, then it scrolls — edit to taste */
+  overflow-y: auto;
+}
 .news-list li {
   margin-bottom: 0.9rem;
   padding-left: 1.1rem;
